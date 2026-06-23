@@ -26,6 +26,11 @@
     <!-- Add Google Fonts and Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- PWA Setup -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
+    <meta name="theme-color" content="#3c5aab" />
   <link rel="icon" href="/Smart-Tourist-Safety-Monitoring-/favicon.ico" /></head>
 
   <body>
@@ -35,6 +40,17 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
+
+    <!-- Register Service Worker for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('%PUBLIC_URL%/sw.js').catch(err => {
+            console.log('SW registration failed: ', err);
+          });
+        });
+      }
+    </script>
   <script src="/Smart-Tourist-Safety-Monitoring-/_expo/static/js/web/index-d62db8cfcfa0dcd1eac14bf2110fa1a1.js" defer></script>
 </body>
 </html>

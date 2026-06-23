@@ -1,0 +1,17 @@
+{
+  "short_name": "SurakshaYatri",
+  "name": "SurakshaYatri Safety App",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#3c5aab"
+}
