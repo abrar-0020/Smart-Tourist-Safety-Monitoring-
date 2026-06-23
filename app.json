@@ -18,8 +18,10 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "basePath": "/Smart-Tourist-Safety-Monitoring-"
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "baseUrl": "/Smart-Tourist-Safety-Monitoring-"
     }
   }
 }
